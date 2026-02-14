@@ -3,302 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dafydd - AI for the Built World</title>
+    <title>Dafydd</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header with Navigation -->
-    <header class="header">
+    <!-- Hero Image -->
+    <section class="hero-image">
+        <img src="https://placehold.co/1200x400/e8e8e8/666666?text=Photo" alt="Profile photo">
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
         <div class="container">
-            <div class="header-content">
-                <nav class="header-nav">
-                    <a href="#research" class="nav-link">Research</a>
-                    <a href="#publications" class="nav-link">Publications</a>
-                    <a href="#contact" class="nav-link">Contact</a>
-                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-                        <span class="theme-icon">☀️</span>
+            <!-- Name and Bio -->
+            <h1 class="name">DAFYDD COTOARBĂ</h1>
+
+            <!-- Social Links -->
+            <div class="social-links">
+                <a href="mailto:dafydd.cotoarba@tum.de" class="social-link" aria-label="Email">
+                    <i class="far fa-envelope"></i>
+                </a>
+                <a href="https://de.linkedin.com/in/dafydd-cotoarb%C4%83-57a4131bb" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://scholar.google.com/citations?user=w8IgK_QAAAAJ&hl=en&oi=ao" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+                    <i class="fas fa-graduation-cap"></i>
+                </a>
+            </div>
+
+            <div class="bio">
+                <p>I am a Researcher at the Georg Nemetschek Institute - Artificial Intelligence for the Built World, Technical University of Munich.</p>
+                <p>My work centers on uncertainty quantification, data-driven methods, and optimization in geotechnical engineering applications. I am passionate about transferring research to industry and bridging the gap between academic innovation and real-world impact.</p>
+                <p>As a Venture Scout at First Momentum Ventures, I identify and support promising Deep Tech and Industry Tech startups across Europe, connecting cutting-edge research with entrepreneurial opportunities.</p>
+            </div>
+
+            <!-- Accordion Sections -->
+            <div class="accordion-container">
+                <!-- Research Section -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span class="accordion-title">RESEARCH</span>
+                        <span class="accordion-icon">+</span>
                     </button>
-                </nav>
-            </div>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-badge">PhD Candidate · TUM</div>
-            <h1 class="hero-title">Dafydd</h1>
-            <p class="hero-subtitle">AI for the Built World</p>
-            <p class="hero-description">
-                Researching probabilistic digital twins at the <strong>Georg Nemetschek Institute</strong>,
-                Technical University of Munich. My work focuses on combining all available data in
-                engineering processes to improve decision making across the built environment.
-                <span class="highlight">Aspiring founder, Summer 2026.</span>
-            </p>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about" id="research">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">01</span>
-                <h2 class="section-title">Research Focus</h2>
-            </div>
-            <div class="about-grid">
-                <div class="about-main">
-                    <p class="lead">
-                        My PhD at the <strong>Georg Nemetschek Institute</strong> at TUM explores how artificial intelligence
-                        can transform the built environment through probabilistic digital twins.
-                    </p>
-                    <p>
-                        The central question: <em>How do we combine all available data in an engineering process to improve
-                        decision making?</em> This involves bridging the gap between physical infrastructure and digital
-                        representations, enabling smarter, data-driven decisions across the entire lifecycle of buildings
-                        and infrastructure.
-                    </p>
-                </div>
-                <div class="about-meta">
-                    <div class="meta-item">
-                        <span class="meta-label">Institution</span>
-                        <span class="meta-value">Technical University of Munich</span>
-                    </div>
-                    <div class="meta-item">
-                        <span class="meta-label">Institute</span>
-                        <span class="meta-value">Georg Nemetschek</span>
-                    </div>
-                    <div class="meta-item">
-                        <span class="meta-label">Research Area</span>
-                        <span class="meta-value">Probabilistic Digital Twins</span>
-                    </div>
-                    <div class="meta-item">
-                        <span class="meta-label">Expected</span>
-                        <span class="meta-value">Summer 2026</span>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <p>My research focuses on uncertainty quantification, data-driven methods, and optimization in geotechnical engineering applications.</p>
+                            <p>I work on probabilistic digital twins for the built environment, particularly in geotechnical design and construction. My work explores how to optimally use data and models to reduce uncertainty and improve decision-making in civil engineering projects.</p>
+                            <p><strong>Research Interests:</strong> Bayesian inference, model updating, adaptive decision rules, geotechnical engineering, digital twins, uncertainty reduction.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Timeline Section -->
-    <section class="timeline">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">02</span>
-                <h2 class="section-title">Journey</h2>
-            </div>
-            <div class="timeline-container">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">Summer 2026</span>
-                        <h3 class="timeline-title">PhD Completion → Founding</h3>
-                        <p>Transition from academia to entrepreneurship, applying research insights to real-world challenges.</p>
+                <!-- Publications Section -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span class="accordion-title">PUBLICATIONS</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <h4 class="publication-category">Journal Papers</h4>
+                            <div class="publication-list">
+                                <div class="publication">
+                                    <h3><a href="https://doi.org/10.1017/dce.2025.10008" target="_blank" rel="noopener noreferrer">Probabilistic digital twins for geotechnical design and construction</a></h3>
+                                    <p class="authors"><strong>Cotoarbă, D.</strong>; Straub, D.; Smith, I. F. C.</p>
+                                    <p class="venue">Data-Centric Engineering 6, e30, 2025</p>
+                                </div>
+                                <div class="publication">
+                                    <h3><a href="https://doi.org/10.1680/jgeot.22.00408" target="_blank" rel="noopener noreferrer">Optimal adaptive decision rules in geotechnical construction considering uncertainty</a></h3>
+                                    <p class="authors">Bismut, E.; <strong>Cotoarbă, D.</strong>; Spross, J.; Straub, D.</p>
+                                    <p class="venue">Géotechnique 74(13), 2024, pp. 1622-1633</p>
+                                </div>
+                            </div>
+
+                            <h4 class="publication-category">Conference Papers</h4>
+                            <div class="publication-list">
+                                <div class="publication">
+                                    <h3><a href="https://strathprints.strath.ac.uk/93291/7/Cotoarba-etal-EG-ICE-2025-Leveraging-probabilistic-machine-learning-for-subsoil.pdf" target="_blank" rel="noopener noreferrer">Leveraging probabilistic machine learning for subsoil modelling to estimate excavated material volumes</a></h3>
+                                    <p class="authors"><strong>Cotoarbă, D.</strong>; Straub, D.; Smith, I. F. C.</p>
+                                    <p class="venue">EG-ICE 2025: International Workshop on Intelligent Computing in Engineering, 2025</p>
+                                </div>
+                                <div class="publication">
+                                    <h3><a href="https://fudinfo.trafikverket.se/fudinfoexternwebb/pages/PublikationVisa.aspx?PublikationId=7535" target="_blank" rel="noopener noreferrer">Data-driven uncertainty reduction in geotechnical engineering: Optimal preloading of a road embankment</a></h3>
+                                    <p class="authors"><strong>Cotoarbă, D.</strong>; Bismut, E.; Spross, J.; Straub, D.</p>
+                                    <p class="venue">14th International Conference on Applications of Statistics and Probability in Civil Engineering (ICASP14), 2023</p>
+                                </div>
+                                <div class="publication">
+                                    <h3><a href="https://www.ucl.ac.uk/bartlett/sites/bartlett/files/model_updating_for_geotechnical_design_and_assessment.pdf" target="_blank" rel="noopener noreferrer">Model Updating for Geotechnical Design and Assessment</a></h3>
+                                    <p class="authors"><strong>Cotoarbă, D.</strong>; Straub, D.; Smith, I. F. C.</p>
+                                    <p class="venue">30th International Conference on Intelligent Computing in Engineering (EG-ICE), 2023</p>
+                                </div>
+                            </div>
+
+                            <h4 class="publication-category">Conference Presentations & Posters</h4>
+                            <div class="publication-list">
+                                <div class="publication">
+                                    <h3>Presentation</h3>
+                                    <p class="authors"><strong>Cotoarbă, D.</strong></p>
+                                    <p class="venue">3rd IACM Digital Twins in Engineering Conference (DTE 2025) & 1st ECCOMAS AICOMAS 2025, Paris, France, February 2025</p>
+                                </div>
+                                <div class="publication">
+                                    <h3>Poster</h3>
+                                    <p class="authors"><strong>Cotoarbă, D.</strong></p>
+                                    <p class="venue">2024 ASCE International Conference on Computing in Civil Engineering (I3CE), Pittsburgh, USA, July 2024</p>
+                                </div>
+                                <div class="publication">
+                                    <h3>Poster</h3>
+                                    <p class="authors"><strong>Cotoarbă, D.</strong></p>
+                                    <p class="venue">The Future of Construction 2023 Symposium, Munich, Germany, September 2023</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2023 - Present</span>
-                        <h3 class="timeline-title">PhD Research at TUM</h3>
-                        <p>Georg Nemetschek Institute - Probabilistic digital twins for the built world.</p>
+
+                <!-- Teaching Section -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span class="accordion-title">TEACHING</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <h3>Current Teaching</h3>
+                            <p><strong>Seminar on Elements of Machine Learning</strong> - Teaching Assistant (Tutorials)</p>
+                            <p>Winter semester 2024/25, Winter semester 2025/26</p>
+
+                            <h3 style="margin-top: 30px;">Previous Teaching Experience</h3>
+                            <p><strong>Foundations in Data Engineering</strong> - Teaching Assistant<br>
+                            Chair of Database Systems, TUM | Oct 2021 - Mar 2022</p>
+
+                            <p><strong>Computational Linear Algebra</strong> - Teaching Assistant<br>
+                            Chair of Computational Modeling and Simulation, TUM | Nov 2020 - Feb 2021</p>
+
+                            <p><strong>Structural Analysis 1 & 2</strong> - Teaching Assistant<br>
+                            Chair of Structural Analysis, TUM | Apr 2018 - Aug 2018</p>
+
+                            <h3 style="margin-top: 30px;">Student Supervision</h3>
+                            <p>I supervise student projects and master's theses on topics related to uncertainty quantification, probabilistic modeling, and machine learning applications in civil and geotechnical engineering.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Publications Section -->
-    <section class="publications" id="publications">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">03</span>
-                <h2 class="section-title">Publications</h2>
-            </div>
-            <div class="publication-list">
-                <article class="publication-item">
-                    <div class="publication-meta">
-                        <span class="pub-type">Journal</span>
-                        <span class="pub-year">2025</span>
-                    </div>
-                    <h3 class="publication-title">
-                        Title of Your Publication Here
-                    </h3>
-                    <p class="publication-authors">
-                        <strong>Your Name</strong>, Co-Author Name, Another Author
-                    </p>
-                    <p class="publication-venue">
-                        <em>Journal Name or Conference Proceedings</em>
-                    </p>
-                    <div class="publication-links">
-                        <a href="#" class="pub-link">PDF</a>
-                        <a href="#" class="pub-link">DOI</a>
-                        <a href="#" class="pub-link">Code</a>
-                    </div>
-                </article>
+<!-- CV Section -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span class="accordion-title">CV</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <h4 class="cv-section">Education</h4>
+                            <p><strong>PhD Candidate</strong> | Technical University of Munich<br>
+                            Georg Nemetschek Institute - Artificial Intelligence for the Built World<br>
+                            July 2022 - Present</p>
 
-                <article class="publication-item">
-                    <div class="publication-meta">
-                        <span class="pub-type">Conference</span>
-                        <span class="pub-year">2024</span>
-                    </div>
-                    <h3 class="publication-title">
-                        Another Publication Title
-                    </h3>
-                    <p class="publication-authors">
-                        Co-Author, <strong>Your Name</strong>, Another Author
-                    </p>
-                    <p class="publication-venue">
-                        <em>Conference Name 2024</em>
-                    </p>
-                    <div class="publication-links">
-                        <a href="#" class="pub-link">PDF</a>
-                        <a href="#" class="pub-link">Slides</a>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
+                            <p><strong>Master's degree, Civil Engineering</strong> | Technical University of Munich<br>
+                            Honours Track: Bavarian Graduate School of Computational Engineering (BGCE)<br>
+                            2019 - March 2022</p>
 
-    <!-- Presentations & Talks -->
-    <section class="presentations">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">04</span>
-                <h2 class="section-title">Presentations & Talks</h2>
-            </div>
-            <div class="presentation-grid">
-                <div class="presentation-item">
-                    <span class="presentation-date">2025</span>
-                    <h3 class="presentation-title">Talk Title at Conference Name</h3>
-                    <p class="presentation-location">Location, Country</p>
-                </div>
-                <div class="presentation-item">
-                    <span class="presentation-date">2024</span>
-                    <h3 class="presentation-title">Invited Talk at Institution</h3>
-                    <p class="presentation-location">Location, Country</p>
-                </div>
-            </div>
-        </div>
-    </section>
+                            <p><strong>Bachelor of Engineering, Civil Engineering</strong> | Technical University of Munich<br>
+                            2015 - 2019</p>
 
-    <!-- Posters -->
-    <section class="posters">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">05</span>
-                <h2 class="section-title">Conference Posters</h2>
-            </div>
-            <div class="poster-grid">
-                <div class="poster-item">
-                    <div class="poster-meta">2025</div>
-                    <h3 class="poster-title">Poster Title Here</h3>
-                    <p class="poster-venue">Conference Name, Location</p>
-                </div>
-            </div>
-        </div>
-    </section>
+                            <p><strong>Civil Engineering</strong> | Technical University of Cluj Napoca<br>
+                            September 2014 - August 2015</p>
 
-    <!-- Hackathons & Events -->
-    <section class="hackathons">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">06</span>
-                <h2 class="section-title">Hackathons & Events</h2>
-            </div>
-            <div class="event-list">
-                <div class="event-item">
-                    <div class="event-header">
-                        <h3 class="event-title">Hackathon Name</h3>
-                        <span class="event-date">2025</span>
-                    </div>
-                    <p class="event-description">Brief description of project or achievement</p>
-                    <span class="event-award">Winner</span>
-                </div>
-            </div>
-        </div>
-    </section>
+                            <h4 class="cv-section">Professional Experience</h4>
+                            <p><strong>Venture Scout</strong> | First Momentum Ventures<br>
+                            May 2025 - Present<br>
+                            Identifying promising startups and founders in Deep Tech, Industry Tech, and B2B SaaS across Europe</p>
 
-    <!-- Conference Organization -->
-    <section class="organization">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">07</span>
-                <h2 class="section-title">Conference Organization</h2>
-            </div>
-            <div class="org-list">
-                <div class="org-item">
-                    <div class="org-role">Organizer</div>
-                    <div>
-                        <h3 class="org-title">Conference/Workshop Name</h3>
-                        <p class="org-details">Year, Location - Brief description of role</p>
+                            <p><strong>Visiting Researcher</strong> | Deltares<br>
+                            Delft, Netherlands | April 2025 - June 2025</p>
+
+                            <p><strong>Researcher</strong> | Georg Nemetschek Institute - Artificial Intelligence for the Built World, TUM<br>
+                            July 2022 - Present<br>
+                            Research on uncertainty quantification, data-driven methods, and optimization in geotechnical engineering</p>
+
+                            <p><strong>Research Assistant</strong> | Chair of Computational Modeling and Simulation, TUM<br>
+                            April 2018 - June 2020</p>
+
+                            <h4 class="cv-section">Honors & Awards</h4>
+                            <p><strong>MSc. Honors Track</strong><br>
+                            Bavarian Graduate School of Computational Engineering - Elite Network of Bayern, 2022</p>
+
+                            <p><strong>Hackathon Winner</strong><br>
+                            [Hackathon Name], [Year]</p>
+
+                            <p><strong>Merit Scholarship</strong><br>
+                            Konrad-Adenauer-Stiftung, 2016</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Teaching & Supervision -->
-    <section class="teaching">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">08</span>
-                <h2 class="section-title">Teaching & Supervision</h2>
-            </div>
-            <div class="teaching-grid">
-                <div class="teaching-category">
-                    <h3 class="category-title">Teaching</h3>
-                    <ul class="teaching-list">
-                        <li class="teaching-item">
-                            <span class="teaching-course">Course Name</span>
-                            <span class="teaching-meta">Semester, Year</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="teaching-category">
-                    <h3 class="category-title">Supervision</h3>
-                    <ul class="teaching-list">
-                        <li class="teaching-item">
-                            <span class="teaching-course">Student Name - Thesis Title</span>
-                            <span class="teaching-meta">Master's Thesis, Year</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">09</span>
-                <h2 class="section-title">Get in Touch</h2>
-            </div>
-            <div class="contact-content">
-                <p class="contact-text">
-                    Interested in my research, looking to collaborate, or want to discuss ideas?
-                    Feel free to reach out.
-                </p>
-                <div class="contact-links">
-                    <a href="mailto:your.email@tum.de" class="contact-link">Email</a>
-                    <a href="https://linkedin.com/in/yourprofile" class="contact-link" target="_blank">LinkedIn</a>
-                    <a href="https://github.com/yourusername" class="contact-link" target="_blank">GitHub</a>
-                    <a href="https://scholar.google.com/yourprofile" class="contact-link" target="_blank">Google Scholar</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>© 2026 Dafydd · Built with care</p>
-        </div>
-    </footer>
+    </main>
 
     <script src="script.js"></script>
 </body>
