@@ -14,6 +14,7 @@
     --color-text-secondary: #666666;
     --color-border: #e0e0e0;
     --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
 }
 
 html {
@@ -21,12 +22,13 @@ html {
 }
 
 body {
-    font-family: var(--font-sans);
-    font-size: 16px;
-    line-height: 1.6;
+    font-family: var(--font-mono);
+    font-size: 15px;
+    line-height: 1.7;
     color: var(--color-text);
     background-color: var(--color-bg);
     -webkit-font-smoothing: antialiased;
+    font-weight: 400;
 }
 
 /* ============================================
@@ -66,11 +68,14 @@ body {
    ============================================ */
 
 .name {
-    font-size: 28px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    margin-bottom: 20px;
+    font-family: var(--font-mono);
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
     color: var(--color-text);
+    text-transform: uppercase;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 /* ============================================
@@ -109,9 +114,10 @@ body {
 }
 
 .bio p {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
     line-height: 1.7;
     color: var(--color-text);
+    font-weight: 400;
 }
 
 /* ============================================
@@ -144,11 +150,14 @@ body {
 }
 
 .accordion-title {
-    font-size: 18px;
-    font-weight: 600;
-    letter-spacing: 1px;
+    font-family: var(--font-mono);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
     color: var(--color-text);
     text-align: left;
+    text-transform: uppercase;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
 }
 
 .accordion-icon {
@@ -179,16 +188,20 @@ body {
 }
 
 .accordion-body p {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
     line-height: 1.7;
     color: var(--color-text);
+    font-weight: 400;
 }
 
 .accordion-body h3 {
-    font-size: 18px;
-    font-weight: 600;
+    font-family: var(--font-mono);
+    font-size: 17px;
+    font-weight: 500;
     margin-bottom: 15px;
     color: var(--color-text);
+    letter-spacing: 0.3px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.03);
 }
 
 .accordion-body .course-description {
@@ -217,14 +230,16 @@ body {
 }
 
 .cv-section {
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
+    font-family: var(--font-mono);
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
     color: var(--color-text);
     margin-top: 30px;
     margin-bottom: 15px;
     padding-bottom: 8px;
     border-bottom: 1px solid var(--color-border);
+    text-transform: uppercase;
 }
 
 .cv-section:first-child {
@@ -236,9 +251,10 @@ body {
    ============================================ */
 
 .publication-category {
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
+    font-family: var(--font-mono);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
     text-transform: uppercase;
     color: var(--color-text-secondary);
     margin-top: 30px;
@@ -258,10 +274,12 @@ body {
 }
 
 .publication h3 {
+    font-family: var(--font-mono);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     margin-bottom: 8px;
     color: var(--color-text);
+    line-height: 1.5;
 }
 
 .publication h3 a {
@@ -279,12 +297,14 @@ body {
     font-size: 14px;
     color: var(--color-text-secondary);
     margin-bottom: 5px;
+    font-weight: 400;
 }
 
 .publication .venue {
     font-size: 14px;
     color: var(--color-text-secondary);
     font-style: italic;
+    font-weight: 400;
 }
 
 /* ============================================
@@ -297,7 +317,7 @@ body {
     }
 
     .name {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .social-links {
@@ -311,7 +331,7 @@ body {
     }
 
     .accordion-title {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .accordion-header {
@@ -329,10 +349,10 @@ body {
     }
 
     .name {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .accordion-title {
-        font-size: 14px;
+        font-size: 13px;
     }
 }
